@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <form method="POST">
+        <h2>Round: {{round}}</h2>
+        <img src="{{url_for('static',filename=image)}}">
+        <input name="ans" type="text">
+        <button name="submit">Check</button>
+        <h4>Score : {{score}}</h4>
+        <button name="clearall">Start Fresh</button>
+        </form>
+    </body>
+</html>
