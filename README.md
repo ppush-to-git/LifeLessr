@@ -78,27 +78,6 @@ The current MVP focuses on building the core gameplay engine using game screensh
 
 ---
 
-## Project Structure
-
-```text
-LifeLessr/
-│
-├── static/
-│   ├── css/
-│   ├── images/
-│   └── js/
-│
-├── templates/
-│
-├── app.py
-│
-├── requirements.txt
-│
-└── README.md
-```
-
----
-
 ## Future Vision
 
 LifeLessr is intended to become a platform where players explore the real-world inspirations behind fictional media.
