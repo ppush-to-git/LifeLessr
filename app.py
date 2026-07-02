@@ -49,7 +49,7 @@ def game():
             return redirect("/play")
         session['round']+=1
         return redirect("/play")  #to start a GET request right after the POST is over,or it'll do both simultaneously
-    return render_template("game.html",score=session['score'],image=image,round=session['round'])
+    return render_template("game.html",score=session['score'],image=image,round=int(session['round'])+1)
 @app.route("/end",methods=['GET','POST'])
 def postgame():
     if request.method=='POST':
