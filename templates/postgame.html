@@ -1,10 +1,32 @@
-<html>
-    <body>
-        <form method="POST">
-        <h2>Current Score: {{curscore}}</h2>
-        <h2>Total Score: {{totalscore}}</h2>
-        <button name="home">Exit</button>
-        <button name="again">Play Again</button>
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLessr - Game Over</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="game-card">
+            <h2>Game Over</h2>
+            
+            <div>
+                <p style="color: var(--text-muted); font-size: 1.2rem; margin-top: 1rem;">Round Score</p>
+                <div class="score-display">{{curscore}}</div>
+            </div>
+            
+            <div class="total-score">
+                Total Accumulative Score: <span style="color: var(--accent-primary); font-weight: bold;">{{totalscore}}</span>
+            </div>
+
+            <form method="POST" class="game-form">
+                <div class="btn-group">
+                    <button type="submit" name="again" class="btn-primary">Play Again</button>
+                    <button type="submit" name="home" class="btn-secondary">Exit to Home</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
 </html>

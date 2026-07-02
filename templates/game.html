@@ -1,12 +1,34 @@
-<html>
-    <body>
-        <form method="POST">
-        <h2>Round: {{round}}</h2>
-        <img src="{{url_for('static',filename=image)}}">
-        <input name="ans" type="text">
-        <button name="submit">Check</button>
-        <h4>Score : {{score}}</h4>
-        <button name="clearall">Start Fresh</button>
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLessr - Round {{round}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="game-card">
+            <div class="game-header">
+                <h2>Round {{round}}</h2>
+                <div class="score-badge">Score: {{score}}</div>
+            </div>
+            
+            <div class="game-image-container">
+                <img src="{{url_for('static',filename=image)}}" alt="Guess the location">
+            </div>
+
+            <form method="POST" class="game-form">
+                <div class="input-group">
+                    <input type="text" name="ans" placeholder="Enter the media title or location..." autocomplete="off" autofocus>
+                </div>
+                
+                <div class="btn-group">
+                    <button type="submit" name="submit" class="btn-primary">Check Answer</button>
+                    <button type="submit" name="clearall" class="btn-danger">Start Fresh</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
