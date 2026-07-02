@@ -1,7 +1,26 @@
-<html>
-    <body>
-        <form method="POST">
-        <button name="play">Play</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLessr</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container hero-layout">
+        <h1 class="game-title">LifeLessr</h1>
+        <p class="subtitle">Discover the real-world locations behind your favorite fictional media.</p>
+        
+        <div class="categories">
+            <span class="cat-pill">Games</span>
+            <span class="cat-pill">Music</span>
+            <span class="cat-pill">Anime</span>
+            <span class="cat-pill">Movies</span>
+        </div>
+        
+        <form method="POST" class="game-form">
+            <button type="submit" name="play" class="btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;">Start Exploring</button>
         </form>
-    </body>
+    </div>
+</body>
 </html>
