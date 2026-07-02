@@ -34,7 +34,7 @@ The current MVP focuses on building the core gameplay engine using game screensh
 - [x] Session management
 - [x] Multi-round game loop
 - [x] Score system
-- [ ] UI improvements
+- [x] UI improvements
 - [ ] Interactive map (Leaflet.js)
 - [ ] Distance-based scoring
 - [ ] PostgreSQL integration
