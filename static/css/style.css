@@ -274,3 +274,7 @@ button:active {
     font-weight: 700;
     margin-left: 0.5rem;
 }
+#map{
+    height:25vh;
+    width:20%;
+}

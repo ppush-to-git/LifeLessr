@@ -35,8 +35,8 @@ The current MVP focuses on building the core gameplay engine using game screensh
 - [x] Multi-round game loop
 - [x] Score system
 - [x] UI improvements
-- [ ] Interactive map (Leaflet.js)
-- [ ] Distance-based scoring
+- [x] Interactive map (Leaflet.js)
+- [x] Distance-based scoring
 - [ ] PostgreSQL integration
 
 ### Planned Features
@@ -68,11 +68,11 @@ The current MVP focuses on building the core gameplay engine using game screensh
 - HTML
 - CSS
 - JavaScript
+- Leaflet.js
 
 ### Planned
 
 - PostgreSQL
-- Leaflet.js
 - Docker
 - Cloud Storage
 
@@ -100,8 +100,8 @@ Every category will use the same core gameplay engine while providing a unique e
 - [x] Session-based gameplay
 - [x] Multi-round game loop
 - [x] End game flow
-- [ ] Interactive map
-- [ ] Distance calculations
+- [x] Interactive map
+- [x] Distance calculations
 - [ ] PostgreSQL database
 - [ ] Authentication
 - [ ] User profiles

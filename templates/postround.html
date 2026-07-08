@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div id="map"></div>
+        <h1>{{message}}</h1>
+        <h2>Game: {{media}}</h2>
+        <h2>Round Score: {{roundscore}}</h2>
+        <script>
+            let latuser={{latuser}};
+            let lnguser={{lnguser}};
+            let latans={{latans}};
+            let lngans={{lngans}};
+        </script>
+        <form method="POST" class="game-form">
+            <button type="submit" name="nextround" class="btn-primary">Next Round</button>
+            <button type="submit" name="clearall" class="btn-danger">Start Fresh</button>
+        </form>
+        <script src="{{ url_for('static', filename='js/postround.js') }}"></script>
+    </body>
+</html>

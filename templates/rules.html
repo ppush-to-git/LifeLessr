@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LifeLessr</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+    <div class="container hero-layout">
+
+    <h1 class="game-title">How to Play</h1>
+
+    <p>
+        LifeLessr challenges you to identify the real-world inspiration behind your
+        favorite games, anime, movies, music, and more.
+    </p>
+
+    <h2>Gameplay</h2>
+    <ul>
+        <li>Study the image carefully.</li>
+        <li>Click on the map where you think the location is.</li>
+        <li>Submit your guess to reveal the answer.</li>
+        <li>Complete all 4 rounds to finish the game.</li>
+    </ul>
+
+    <h2>Scoring</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Distance</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0–50 km</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>50–500 km</td>
+                <td>4500</td>
+            </tr>
+            <tr>
+                <td>500–1000 km</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>1000–2000 km</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>2000+ km</td>
+                <td>250</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Inspiration vs Origin</h2>
+    <p>
+        Some media are inspired by real-world locations, while others are entirely
+        fictional.
+    </p>
+
+    <ul>
+        <li><strong>Inspiration</strong> – The real-world place that inspired the setting.</li>
+        <li><strong>Origin</strong> – The location where the media was created.</li>
+    </ul>
+
+    <p>
+        If a title has no meaningful real-world inspiration, your guess will be
+        compared against its origin instead.
+    </p>
+
+    <h2>Tips</h2>
+    <ul>
+        <li>Not every answer is a city—some are regions or entire countries.</li>
+        <li>Close guesses are rewarded, so don't worry about pinpoint accuracy.</li>
+        <li>Use clues from architecture, landscapes, vehicles, signs, and landmarks.</li>
+    </ul>
+
+    <p><strong>Good luck, and have fun exploring!</strong></p>
+        
+        <form method="POST" class="game-form">
+            <button type="submit" name="play" class="btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3rem;">Start Exploring</button>
+        </form>
+    </div>
+    </body>
+</html>
