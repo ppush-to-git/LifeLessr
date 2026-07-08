@@ -1,4 +1,4 @@
-var map = L.map('map').setView([28.613,77.209],13)
+var map = L.map("map").setView([20, 0], 1)
 var userMarker=L.icon({
     iconUrl: '/static/markers/marker-icon-violet.png',
     shadowUrl: '/static/markers/marker-shadow.png',
