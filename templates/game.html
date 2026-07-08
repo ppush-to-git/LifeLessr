@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LifeLessr - Round {{round}}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container">
@@ -15,7 +15,7 @@
             </div>
             
             <div class="game-image-container">
-                <img src="{{url_for('static',filename=image)}}" alt="Guess the location">
+                <img src="{{url_for('sendurl',imgpath=image)}}" alt="Guess the location">
             </div>
 
             <form method="POST" class="game-form">

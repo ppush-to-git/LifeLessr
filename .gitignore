@@ -1,10 +1,54 @@
-__pycache__/
+# Python
+
+**pycache**/
 *.py[cod]
-venv/
+*$py.class
+test.py
+*/test.py
+
+# Virtual environments
+
 .venv/
+venv/
 env/
+ENV/
+
+# Environment variables
+
 .env
+
+# IDEs
+
 .vscode/
 .idea/
+
+# OS files
+
 .DS_Store
 Thumbs.db
+
+# Logs
+
+*.log
+
+# SQLite databases
+
+*.db
+*.sqlite3
+
+# Python cache
+
+.pytest_cache/
+.mypy_cache/
+
+# Build artifacts
+
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+
+*.tmp
+*.bak
+*.swp
