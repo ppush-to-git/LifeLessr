@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="container">
+    <div class="container narrow-container">
         <div class="game-card">
-            <h2>Game Over</h2>
+            <h1 class="game-title" style="font-size: 4rem;">Game Over</h1>
             
-            <div>
-                <p style="color: var(--text-muted); font-size: 1.2rem; margin-top: 1rem;">Round Score</p>
+            <div style="margin: 3rem 0;">
+                <p style="color: var(--text-secondary); font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; font-family: var(--font-heading); font-weight: 600;">Round Score</p>
                 <div class="score-display">{{curscore}}</div>
             </div>
             
-            <div class="total-score">
-                Total Accumulative Score: <span style="color: var(--accent-primary); font-weight: bold;">{{totalscore}}</span>
+            <div class="total-score" style="background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--border-color); margin-bottom: 3rem;">
+                Total Accumulative Score: <br><span style="color: var(--accent-primary); font-size: 3rem; display: block; margin-top: 0.5rem; text-shadow: 0 0 20px var(--accent-glow);">{{totalscore}}</span>
             </div>
 
             <form method="POST" class="game-form">
