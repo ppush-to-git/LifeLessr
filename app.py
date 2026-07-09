@@ -107,4 +107,5 @@ def rules():
 @app.route("/dataset/<path:imgpath>")
 def sendurl(imgpath):
     return send_from_directory(imgsdir,imgpath)
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
