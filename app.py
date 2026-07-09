@@ -56,7 +56,7 @@ def postround():
     origin_lng=currentimg[10]
     if inspiration_lat is None:
         distance=haversine(session['lat'],session['lng'],origin_lat,origin_lng)
-        message=f"Spit yo shi indeed Yo guess is {distance} kms away from the origin."
+        message=f"Your guess is {distance} kms away from the origin."
         latans=origin_lat
         lngans=origin_lng
     else:
@@ -64,12 +64,12 @@ def postround():
         distance_inspiration=haversine(session['lat'],session['lng'],inspiration_lat,inspiration_lng)
         if distance_inspiration<=distance_origin:
             distance=distance_inspiration
-            message=f"Spit yo shi indeed Yo guess is {distance} kms away from the inspiration."
+            message=f"Your guess is {distance} kms away from the inspiration."
             latans=inspiration_lat
             lngans=inspiration_lng
         elif distance_origin<distance_inspiration:
             distance=distance_origin
-            message=f"Spit yo shi indeed Yo guess is {distance} kms away from the origin."
+            message=f"Your guess is {distance} kms away from the origin."
             latans=origin_lat
             lngans=origin_lng
     roundscore=calcScore(distance)
