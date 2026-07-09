@@ -9,7 +9,6 @@
 - Improved README with setup instructions and project overview
 
 ### Fixed
-- Fixed polyline rendering for locations crossing the International Date Line
 - Fixed image renaming script to prevent filename conflicts
 
 ## [v0.3.0] - Implemented playable map-guessing gameplay
