@@ -1,3 +1,17 @@
+## [v0.3.1] - Bugfix/Project polish
+
+### Added
+- `.env.example` for easier project setup
+- `requirements.txt`
+
+### Changed
+- Switched to a cleaner map tile provider
+- Improved README with setup instructions and project overview
+
+### Fixed
+- Fixed polyline rendering for locations crossing the International Date Line
+- Fixed image renaming script to prevent filename conflicts
+
 ## [v0.3.0] - Implemented playable map-guessing gameplay
 
 ### Added

@@ -7,9 +7,9 @@ var userMarker=L.icon({
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
 });
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap &copy; CARTO',
+    maxZoom: 19
 }).addTo(map);
 let marker=null;
 function onMapClick(e){

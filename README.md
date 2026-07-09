@@ -2,24 +2,30 @@
 
 LifeLessr is a GeoGuessr-inspired web application where players identify the real-world locations behind fictional media.
 
-Instead of guessing locations from Street View, players are presented with content from games, music, anime, movies, or TV series and must locate the real-world city or place associated with that media.
+Instead of guessing locations from Street View, players are presented with content from games, music, anime, movies, or TV series and must locate the real-world city, region, or country associated with that media.
 
-The long-term vision is to build a single gameplay engine that supports multiple categories while rewarding both geographical intuition and media knowledge.
+The long-term vision is to build a unified gameplay engine that supports multiple media categories while rewarding both geographical intuition and media knowledge.
+
+---
+
+## Preview
+
+*Screenshots coming soon.*
 
 ---
 
 ## Current Status
 
-LifeLessr is currently under active development.
+LifeLessr is currently in the playable prototype stage.
 
-The current MVP focuses on building the core gameplay engine using game screenshots.
+The current prototype includes:
 
-### Implemented
-
+- Interactive map-based gameplay
 - Random screenshot selection
+- Metadata-driven dataset
 - Session-based game state
 - Multi-round gameplay
-- Score tracking
+- Distance-based scoring
 - End game screen
 - Replay functionality
 
@@ -41,21 +47,21 @@ The current MVP focuses on building the core gameplay engine using game screensh
 
 ### Planned Features
 
-- User authentication
-- User profiles
-- Statistics dashboard
-- Leaderboards
-- Daily challenges
-- Community submissions
-- Admin dashboard for media management
+- [ ] User authentication
+- [ ] User profiles
+- [ ] Statistics dashboard
+- [ ] Leaderboards
+- [ ] Daily challenges
+- [ ] Community submissions
+- [ ] Admin dashboard
 
 ### Planned Categories
 
-- Games
-- Music
-- Anime
-- Movies
-- TV Series
+- [x] Games
+- [ ] Music
+- [ ] Anime
+- [ ] Movies
+- [ ] TV Series
 
 ---
 
@@ -65,10 +71,12 @@ The current MVP focuses on building the core gameplay engine using game screensh
 
 - Python
 - Flask
+- SQLite
 - HTML
 - CSS
 - JavaScript
 - Leaflet.js
+- Geoapify Geocoding API
 
 ### Planned
 
@@ -78,11 +86,44 @@ The current MVP focuses on building the core gameplay engine using game screensh
 
 ---
 
+## Setup
+
+1. Clone the repository.
+
+2. Create a `.env` file in the project root by copying `.env.example`.
+
+3. Replace the placeholder values:
+
+   - `SECRET_KEY` – Any random secret string for Flask sessions.
+   - `GEOAPIFY_API_KEY` – Your Geoapify API key.
+
+4. Install the dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Start the application:
+
+   ```bash
+   python app.py
+   ```
+
+6. Open your browser:
+
+   ```
+   http://127.0.0.1:5000
+   ```
+
+> **Note:** The Geoapify API key is only required for the dataset utility scripts (such as coordinate generation). The game itself reads from the pre-generated SQLite database included in the repository.
+
+---
+
 ## Future Vision
 
 LifeLessr is intended to become a platform where players explore the real-world inspirations behind fictional media.
 
-Example categories include:
+Planned categories include:
 
 - Games → Real-world city inspirations
 - Music → Artist or band origins
@@ -90,27 +131,18 @@ Example categories include:
 - Movies → Filming locations
 - TV Series → Story settings and filming locations
 
-Every category will use the same core gameplay engine while providing a unique experience.
+Every category will share the same gameplay engine while using category-specific datasets and scoring.
 
 ---
 
-## Development Progress
+## Contributing
 
-- [x] Random media selection
-- [x] Session-based gameplay
-- [x] Multi-round game loop
-- [x] End game flow
-- [x] Interactive map
-- [x] Distance calculations
-- [ ] PostgreSQL database
-- [ ] Authentication
-- [ ] User profiles
-- [ ] Statistics
-- [ ] Leaderboards
-- [ ] Deployment
+Contributions, suggestions, and feedback are always welcome.
+
+If you'd like to improve the project or add support for new media, feel free to open an issue or submit a pull request.
 
 ---
 
 ## Project Status
 
-This project is a personal learning project and portfolio piece. It is under active development, and the architecture, gameplay, and feature set will continue to evolve as new ideas and categories are added.
+LifeLessr is a personal learning project and portfolio piece. The architecture, gameplay, and feature set will continue to evolve as new categories, features, and gameplay improvements are added.
