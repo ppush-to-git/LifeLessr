@@ -10,6 +10,7 @@
 
 ### Fixed
 - Fixed image renaming script to prevent filename conflicts
+- Fixed a bug that made the polyline go around the whole map instead of taking the shortest path
 
 ## [v0.3.0] - Implemented playable map-guessing gameplay
 
