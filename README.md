@@ -10,12 +10,14 @@ The long-term vision is to build a unified gameplay engine that supports multipl
 
 ## Preview
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
+![Landing](screenshots/landing.png)
+![Rules](screenshots/rules.png)
+![Gameplay](screenshots/gameplay1.png)
+![Gameplay](screenshots/gameplay2.png)
+![Post Round](screenshots/postround1.png)
+![Post Round](screenshots/postround2.png)
+![Game Over](screenshots/postround2.png)
+
 ---
 
 ## Current Status
