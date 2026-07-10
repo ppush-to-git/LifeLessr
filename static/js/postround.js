@@ -19,8 +19,19 @@ var ansicon=L.icon({
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
 });
-usercoor=[latuser,lnguser];
-anscoor=[latans,lngans];
+//normalization of longitudes in case the markers are across the International Date Line,
+//which causes a bug that makes the polyline go around the whole map instead of taking the shorter path
+userlng=lnguser;
+anslng=lngans;
+if(Math.abs(userlng-anslng)>180){
+    if(anslng<userlng)
+        anslng+=360;
+    else
+        userlng+=360;
+}
+
+usercoor=[latuser,userlng];
+anscoor=[latans,anslng];
 usermarker=L.marker(usercoor,{icon:usericon,riseOnHover:true}).addTo(map);
 ansmarker=L.marker(anscoor,{icon:ansicon,riseOnHover:true}).addTo(map);
 conLine=L.polyline([usercoor,anscoor],{color:'#9709d3',dashArray:'10,10'}).addTo(map);
@@ -28,8 +39,3 @@ var bounds=conLine.getBounds();
 map.fitBounds(bounds);
 usermarker.bindPopup("Your Guess");
 ansmarker.bindPopup("Correct Location");
-
-// TODO:
-// Properly handle International Date Line crossings for result polylines.
-// Current implementation may render the long path when points lie on opposite
-// sides of the antimeridian.
