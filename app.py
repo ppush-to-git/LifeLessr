@@ -8,6 +8,7 @@ parentdir = os.path.dirname(os.path.realpath(__file__))
 load_dotenv(os.path.join(parentdir,'.env'))
 FLASK_SECRET_KEY = os.getenv("SECRET_KEY")
 imgsdir = os.path.join(parentdir, "dataset")
+
 app=Flask(__name__)
 app.secret_key=FLASK_SECRET_KEY
 @app.route("/",methods=["GET","POST"])
