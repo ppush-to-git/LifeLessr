@@ -16,7 +16,7 @@ The long-term vision is to build a unified gameplay engine that supports multipl
 ![Gameplay](screenshots/gameplay2.png)
 ![Post Round](screenshots/postround1.png)
 ![Post Round](screenshots/postround2.png)
-![Game Over](screenshots/postround2.png)
+![Game Over](screenshots/gameover.png)
 
 ---
 
