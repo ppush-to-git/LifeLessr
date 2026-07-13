@@ -153,8 +153,9 @@ If you'd like to improve the project or add support for new media, feel free to 
 
 LifeLessr is a personal learning project and portfolio piece. The architecture, gameplay, and feature set will continue to evolve as new categories, features, and gameplay improvements are added.
 
+
 ## Inspiration
 
-LifeLessr was inspired by **[RadioGuessr](https://www.radioguessr.space/)**, a game that challenges players to identify songs based on short audio clips. That concept inspired me to explore a similar guessing experience using real-world locations behind fictional media.
+LifeLessr was inspired by **[RadioGuessr](https://www.radioguessr.space/)**, a game where players listen to live radio stations and guess their real-world locations. That concept inspired me to explore a similar location-guessing experience using the real-world inspirations and origins behind fictional media.
 
-Instead of music, LifeLessr focuses on games (with plans to expand into anime, movies, music, and more), challenging players to identify the real-world inspirations or origins behind their favorite media.
+Instead of radio stations, LifeLessr focuses on games (with plans to expand into anime, movies, music, and more), challenging players to identify the real-world locations that inspired their favorite media—or, when no direct inspiration exists, the media's place of origin.
